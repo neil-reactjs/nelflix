@@ -10,6 +10,8 @@ import useMovieList from '@/hooks/useMovieList';
 import useFavorites from '@/hooks/useFavorites';
 import useInfoModalStore from '@/hooks/useInfoModalStore';
 
+export const runtime = 'edge' // 'nodejs' (default) | 'edge'
+
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
 
